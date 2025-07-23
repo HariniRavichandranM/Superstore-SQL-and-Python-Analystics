@@ -11,9 +11,9 @@ The analysis is powered by **SQL Server** for ETL and business logic, and **Pyth
 ## Project Objectives
 
 - Clean and normalise raw sales data using SQL  
-- Create a star schema for structured reporting  
+- Create a star schema 
 - Write analytical SQL queries for business KPIs  
-- Visualize the output using Python (Pandas, Matplotlib, Seaborn, Plotly)  
+- Visualise the output using Python (Pandas, Matplotlib, Seaborn, Plotly)  
 - Provide insights on sales performance, customer loyalty, and category trends
 
 ---
