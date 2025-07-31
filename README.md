@@ -14,7 +14,7 @@ The analysis is powered by **SQL Server** for ETL and business logic, and **Pyth
 - Create a star schema 
 - Write analytical SQL queries for business KPIs  
 - Visualise the output using Python (Pandas, Matplotlib, Seaborn, Plotly)  
-- Provide insights on sales performance, customer loyalty, and category trends
+- Provide insights on sales performance, Sales by segments, monthly sales trend, category and subcategory trends
 
 ---
 
@@ -34,7 +34,7 @@ The dataset contains historical sales transactions, customer information, produc
 | Tool         | Purpose                              |
 |--------------|---------------------------------------|
 | SQL Server   | Data ingestion, cleaning, transformation, querying |
-| Python       | Data analysis, charts, and visualization |
+| Python       | Data analysis, charts, and visualisation |
 | Jupyter Lab  | Notebook environment for Python EDA   |
 | Excel/CSV    | Raw data source                       |
 
@@ -59,11 +59,11 @@ The dataset contains historical sales transactions, customer information, produc
 ### 3. Schema Design
 
 Created a **Star Schema**:
-- `customers_dim`
-- `product_dim`
-- `address_dim`
-- `date_dim`
-- `orders_fact`
+- `Customers_dim`
+- `Product_dim`
+- `Address_dim`
+- `Date_dim`
+- `Orders_fact`
 
 Surrogate keys and consistent foreign keys were used to maintain referential integrity.
 
@@ -101,12 +101,13 @@ Created SQL views to simplify reporting:
 
 ## Python Visualizations
 
-Used `Pandas`, `Matplotlib`, `Seaborn`, and `Plotly` for:
+Used `Pandas`, `Matplotlib`, `Seaborn` for:
 - Sales and profit trends over time  
 - Category-wise sales distribution  
-- Customer segmentation by region and segment  
-- Repeat vs. new customers  
-- Heatmaps and bar plots for region vs sales  
+- Number of orders by region and state  
+- Heatmaps and bar plots for region vs sales
+- Line chart for monthly sales and profit trends
+- Pie chart for Sales by Customer Segments 
 
 ---
 
